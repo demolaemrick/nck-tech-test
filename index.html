@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NCK Technologies</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">    
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-logo"></div>
+        <div class="nav-items">
+            <div class="nav-item">
+                <a href="#">Trips</a>                
+            </div>
+            <div class="nav-item">
+                <a href="">
+                    Recently Viewed
+                </a>
+                </div>
+            <div class="nav-item">
+                <a href="">Bookings</a>
+            </div>
+            <div class="img-container">
+                <img src="./images/cardi-b.png" alt="profile picture">              
+            </div>            
+        </div>
+    </nav>
+    <hr />
+    <section class="payment my-4">
+
+          <!-- first segment -->
+        <div class="d-flex flex-row justify-content-between w-100">
+            <div class="payment-info flex-grow-1">
+                <h1>Payment Information</h1>
+                <p>Choose your method of payment.</p> 
+                <div class="card">
+                    <div>
+                        <h2 class="lh-lg">Card number</h2>
+                        <p>4324 5433 9382 1030</p>
+                    </div>
+                    <div>
+                        <div class="d-flex align-items-center position-relative mb-4">
+                            <span class="material-icons">wifi</span>
+                            <div>Chip</div>
+                        </div>
+                        <h2 class="mb-3">EXPIRATION DATE</h2>
+                        <p>03/24</p>
+                        <div class="d-flex justify-content-between p-up">
+                            <span class="card-owner align-self-center">John Doe</span>
+                            <div class="d-flex position-relative">
+                                <div class="red"></div>
+                                <div class="yellow"></div>
+                            </div>                            
+                        </div>                        
+                    </div>
+                </div>  
+                        
+            </div>
+
+            <!-- second segment -->            
+            <div class="payment-details">
+                <div class="d-flex justify-content-end">
+                    <div class="logo-container">
+                        <img src="./images/Visa-Emblem.jpg" alt="visa logo">
+                    </div>
+                    <div class="logo-container">
+                        <img src="./images/Discover-logo.png" alt="discover logo">
+                    </div> 
+                    <div class="circle"></div>                                                                                   
+                    <div class="logo-container">
+                        <img class="w-80" src="./images/PayPal-Logo.png" alt="">                            
+                    </div>
+                </div>
+                <!-- form -->
+                <div class="row">
+
+                    <!-- col-1 -->
+                    <div class="col">
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Credit card number</label>
+                            <input type="email" class="form-control" value="4324 5433 9382 1030" id="exampleFormControlInput1" readonly>
+                        </div> 
+
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Security code</label>
+                            <input type="email" class="form-control" value="420" id="exampleFormControlInput1"  readonly>
+                        </div>
+
+                        <!-- radio button -->
+                        <div class="form-check my-4">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                            <label class="form-check-label" for="flexRadioDefault2">
+                                Use this card for next purchase
+                            </label>
+                        </div>
+                    </div>
+
+
+                    <!-- col-2 -->
+                    <div class="col">
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Expiration date</label>
+                            <input type="email" class="form-control" value="03/24" id="exampleFormControlInput1" readonly>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Postal code</label>
+                            <input type="email" class="form-control" value="10119" id="exampleFormControlInput1"  readonly>
+                        </div>
+                    </div>
+
+                    <!-- button -->
+                    <button type="button" class="btn btn-primary payment-btn">Add card</button>
+                </div>                
+             </div>                
+        </div>        
+    </section>
+
+    <hr>
+    <!-- price summary -->
+    <section class="price-summary">
+        <div class="d-flex justify-content-between">
+            <!-- col-1 -->
+            <div class="price-summary-titles flex-grow-1">
+                <div class="my-4"><strong>Subtotal</strong></div>
+                <div class="my-4"><strong>Estimated TAX</strong></div>
+                <div class="d-flex promo my-4">
+                    <strong style="margin-right: 5px;">Promotional Code:</strong>
+                    <p>Z4KLM9A</p>
+                </div>                                
+            </div>
+
+            <!-- col-2 -->
+            <div>
+                <div class="my-4"><strong>&#8358;2,497.00</strong></div>
+                <div class="my-4"><strong>&#8358;119.64</strong></div>
+                <div class="my-4"><strong>&#8358;-60.00</strong></div>                                                
+            </div>
+        </div>
+    </section>
+
+    <hr>
+    <!-- total amount -->
+    <section>
+        <div class="d-flex justify-content-between my-5">
+            <button type="button" class="btn btn-primary complete-btn">Complete payment</button>
+            <div class="fs-3 total-amount">
+             <strong>Total: &#8358;2556.64</strong>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
