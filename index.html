@@ -42,18 +42,23 @@
                 <h1>Payment Information</h1>
                 <p>Choose your method of payment.</p> 
                 <div class="card">
-                    <div>
+                    <div class="mx-4 px-1">
                         <h2 class="lh-lg">Card number</h2>
                         <p>4324 5433 9382 1030</p>
                     </div>
                     <div>
                         <div class="d-flex align-items-center position-relative mb-4">
                             <span class="material-icons">wifi</span>
-                            <div>Chip</div>
+                            <div class="chip-container mx-1">
+                                <div class="background-circle circle"></div>
+                                <img class="chip" src="./images/chip.png" alt="chip">
+                            </div>
                         </div>
-                        <h2 class="mb-3">EXPIRATION DATE</h2>
-                        <p>03/24</p>
-                        <div class="d-flex justify-content-between p-up">
+                        <div class="mx-4 px-1">
+                            <h2 class="mb-3">EXPIRATION DATE</h2>
+                            <p>03/24</p>
+                        </div>
+                        <div class="d-flex justify-content-between mx-4 p-up">
                             <span class="card-owner align-self-center">John Doe</span>
                             <div class="d-flex position-relative">
                                 <div class="red"></div>
@@ -86,12 +91,12 @@
                     <div class="col">
                         <div class="mb-3">
                             <label for="exampleFormControlInput1" class="form-label">Credit card number</label>
-                            <input type="email" class="form-control" value="4324 5433 9382 1030" id="exampleFormControlInput1" readonly>
+                            <input type="text" class="form-control" value="4324 5433 9382 1030" id="exampleFormControlInput1" readonly>
                         </div> 
 
                         <div class="mb-3">
                             <label for="exampleFormControlInput1" class="form-label">Security code</label>
-                            <input type="email" class="form-control" value="420" id="exampleFormControlInput1"  readonly>
+                            <input type="text" class="form-control" value="420" id="exampleFormControlInput1"  readonly>
                         </div>
 
                         <!-- radio button -->
@@ -108,12 +113,12 @@
                     <div class="col">
                         <div class="mb-3">
                             <label for="exampleFormControlInput1" class="form-label">Expiration date</label>
-                            <input type="email" class="form-control" value="03/24" id="exampleFormControlInput1" readonly>
+                            <input type="text" class="form-control" value="03/24" id="exampleFormControlInput1" readonly>
                         </div>
 
                         <div class="mb-3">
                             <label for="exampleFormControlInput1" class="form-label">Postal code</label>
-                            <input type="email" class="form-control" value="10119" id="exampleFormControlInput1"  readonly>
+                            <input type="text" class="form-control" value="10119" id="exampleFormControlInput1"  readonly>
                         </div>
                     </div>
 
