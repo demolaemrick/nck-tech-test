@@ -34,6 +34,7 @@ body {
   color: #000000;
   text-decoration: none;
   text-transform: uppercase;
+  font-size: 20px;
   font-weight: bold;
   letter-spacing: 2px;
 }
@@ -74,7 +75,7 @@ section {
 .payment .card {
   width: 500px;
   height: auto;
-  background-image: linear-gradient(70deg, #fc037b, #6342f5);
+  background-image: linear-gradient(70deg, #f03a3a, #9995e6);
   color: #fff;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -84,7 +85,29 @@ section {
 .payment .card h2 {
   font-size: 12px;
 }
+.chip-container {
+  position: relative;
+  width: 70px;
+  height: auto;
+}
+.chip-container .chip {
+  z-index: 1;
+  width: 100%;
+  -webkit-filter: invert(40%) grayscale(100%) brightness(40%) sepia(100%)
+    hue-rotate(-50deg) saturate(400%) contrast(2);
+  filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg)
+    saturate(600%) contrast(0.8);
+}
 
+.chip-container .background-circle {
+  position: absolute;
+  left: -0.5px;
+  z-index: 0;
+  bottom: 100px;
+  width: 100%;
+  height: 50px;
+  background-color: rgb(247, 188, 188);
+}
 .p-up {
   position: relative;
   bottom: 20px;
@@ -134,9 +157,6 @@ section {
 
 .form-control {
   padding: 15px 20px;
-  letter-spacing: 1px;
-}
-.form-check-label {
   letter-spacing: 1px;
 }
 
