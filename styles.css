@@ -137,8 +137,8 @@ section {
   width: 50%;
 }
 .logo-container {
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
   margin-right: 20px;
 }
 .logo-container img {
@@ -147,10 +147,10 @@ section {
 }
 .circle {
   position: relative;
-  top: 10px;
+  top: 6px;
   right: 10px;
-  width: 10px;
-  height: 10px;
+  width: 12px;
+  height: 12px;
   background-color: rgb(218, 214, 214);
   border-radius: 50%;
 }
@@ -185,4 +185,9 @@ section {
 
 .total-amount {
   font-weight: 700;
+}
+
+hr{
+  background-color: rgb(177, 173, 173);
+  height: 1.2px !important;
 }
